@@ -55,6 +55,25 @@ input{
   
 }
 
+/* country code */
+.phone{
+  width: 46px;
+  height: 13px;
+  font-family: "outfit", sans-serif;
+  color: #333333;
+}
+.phone_code{
+  width: 48px;
+  height: 40px;
+   
+}
+
+.phone_num{
+  width: 268px;
+  height: 40px;
+  display: inline-block;
+}
+
 label{
   font-size: 12px;
   color: #333333;
