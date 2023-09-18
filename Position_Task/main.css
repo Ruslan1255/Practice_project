@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ebecf5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.main_page {
+  position: relative;
+  height: 100vh;
+}
+
+.circle_pink {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background-color: #f865b3;
+  position: absolute;
+  top: 15%;
+  left: 27%;
+}
+
+.circle_orange {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  background-color: #f87e65;
+  position: absolute;
+  top: 41%;
+  right: 22%;
+}
+
+.card {
+  width: 400px;
+  padding: 50px 40px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: relative;
+  top: 25%;
+}
+
+.title {
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+.events{
+  margin:45px 0;
+  position: relative;
+}
+
+.events::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #cccccc5d;
+  bottom: -20px;
+  left: 0;
+}
+
+.event_head_text {
+  font-size: 14px;
+}
+
+.date_container,
+.events_time {
+  font-size: 12px;
+}
+
+.btn{
+  background-color: #F8656E;
+  color: #fff;
+  padding:15px 0;
+  width: 100%; 
+  margin: 50px 0 0 0  ;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
