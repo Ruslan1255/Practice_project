@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Outfit:wght@500&family=Roboto:wght@300;400;500;900&family=Ubuntu:wght@700&family=Work+Sans:wght@600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+.wrapper{
+  margin: 0 50px;
+  padding: 0 90px;
+}
+header{
+  box-shadow: 0px 4px 60px 0px #00000014;
+
+  width: 100%;
+}
+.header {
+  width: 90%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 320px;
+  position: sticky;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #31134d;
+}
+
+.nav_menu {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.sign_button button{
+  border-radius: 4px;
+  padding: 8px 16px;
+  border: none;
+  background: #1b9e4b;
+  color: white;
+  cursor: pointer;
+}
+
+.main_section_card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info_box{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.black_title{
+  color: #1F2228;
+  font-weight: 700;
+  font-size: 60px
+}
+
+
+.purple_title{
+  color: #A855F7;
+  font-weight: 700;
+  font-size: 60px
+}
+
+.paragraph{
+  width: 405px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #797C81;
+}
+
+.main_section_card_button button{
+  border: none;
+  border-radius: 4px;
+  padding: 12px 40px;
+  background: #1B9E4B;
+  color:white;
+  font-size: 16px;
+  font-weight: 300;
+  cursor: pointer;
+}
