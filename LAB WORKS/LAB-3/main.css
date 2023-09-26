@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Outfit:wght@500&family=Roboto:wght@300;400;500;900&family=Ubuntu:wght@700&family=Work+Sans:wght@600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.wrapper {
+  margin: 0 50px;
+  padding: 0 90px;
+}
+header {
+  box-shadow: 0px 4px 60px 0px #00000014;
+
+  width: 100%;
+}
+
+section {
+  margin: 50px 0;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 320px;
+  position: sticky;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #31134d;
+}
+
+.nav_menu {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.sign_button button {
+  border-radius: 4px;
+  padding: 8px 16px;
+  border: none;
+  background: #1b9e4b;
+  color: white;
+  cursor: pointer;
+}
+
+.main_section_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info_box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.black_title {
+  color: #1f2228;
+  font-weight: 700;
+  font-size: 60px;
+}
+
+.purple_title {
+  color: #a855f7;
+  font-weight: 700;
+  font-size: 60px;
+}
+
+.paragraph p {
+  width: 505px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #797c81;
+}
+
+.main_section_card_button button {
+  border: none;
+  border-radius: 4px;
+  padding: 12px 40px;
+  background: #1b9e4b;
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.section_titles {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  color: #0a0b0d;
+}
+
+.info_cards_options {
+  margin: 90px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 90px;
+}
+
+.service_section_card_menu_item {
+  width: 400px;
+  height: 210px;
+}
+
+.margin {
+  margin: 10px 0;
+}
+
+.service_section_card_menu_item_title {
+  font-weight: 700;
+  font-size: 25px;
+  color: #1f2228;
+}
+
+.service_section_card_menu_item_content p {
+  font-weight: 400px;
+  font-size: 16px;
+  color: #292d35;
+}
+
+.advantage_section_info_card_item {
+  width: 400px;
+  text-align: center;
+}
+
+.advantage_section_info_card_item_title {
+  color: #14161b;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.advantage_section_info_card_item_title_content p {
+  font-weight: 400px;
+  font-size: 16px;
+  color: #14161b;
+  padding: 5px;
+}
+
+.price_secton_list_container {
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price_section_list_box {
+  position: relative;
+  width: 420px;
+  border: 2px solid#0E4F26;
+  padding: 30px 0 0;
+}
+
+.price_section_list_title {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+.price_section_list_box_tag {
+  border-bottom: none !important;
+  width: 145px;
+  position: absolute;
+  top: -46px;
+  right: 135px;
+  border: 2px solid #401b63;
+  border-radius: 4px 4px 0 0;
+  padding: 10px 16px;
+}
+
+.price_section_list_card {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 50px 60px;
+}
+
+.price_section_list {
+  margin: 0 15px;
+  list-style: none;
+}
+
+.price_section_list_item {
+  margin: 10px 0;
+  display: flex;
+  gap: 15px;
+  justify-content: start;
+}
+.false_icon {
+  color: #858d9d;
+}
+
+.bottom_box {
+  text-align: center;
+  padding: -20px;
+  margin-top: 80px;
+  align-items: flex-end;
+}
+
+.price_section_list_cash{
+  font-size: 24px;
+  font-weight: 700;
+  color: #292D35;
+  display: inline-block;
+}
+
+.cash_month{
+  display: inline-block;
+}
+
+
+
+.price_section_list_box_button button{
+  width: 300px;
+  border-radius: 4px;
+  padding: 8px 16px;
+  background: #1B9E4B;
+  color: #F0F1F3;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  text-align: center;
+}
