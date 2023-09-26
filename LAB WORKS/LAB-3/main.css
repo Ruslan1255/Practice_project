@@ -34,7 +34,7 @@ section {
   justify-content: space-between;
 }
 
-.logo {
+.header_logo {
   font-size: 20px;
   font-weight: 700;
   color: #31134d;
@@ -96,6 +96,7 @@ section {
 }
 
 .section_titles {
+  margin: 75px 0;
   text-align: center;
   font-size: 36px;
   font-weight: 600;
@@ -150,6 +151,9 @@ section {
   padding: 5px;
 }
 
+.price_ section {
+  margin: 100px 0;
+}
 .price_secton_list_container {
   margin-top: 75px;
   display: flex;
@@ -182,8 +186,7 @@ section {
 .price_section_list_card {
   display: flex;
   flex-direction: column;
-  width: 400px;
-  padding: 50px 60px;
+  padding: 30px 60px;
 }
 
 .price_section_list {
@@ -208,27 +211,123 @@ section {
   align-items: flex-end;
 }
 
-.price_section_list_cash{
+.cash_box {
+  margin-bottom: 20px;
+}
+.price_section_list_cash {
   font-size: 24px;
   font-weight: 700;
-  color: #292D35;
+  color: #292d35;
   display: inline-block;
 }
 
-.cash_month{
+.cash_month {
   display: inline-block;
 }
 
-
-
-.price_section_list_box_button button{
+.price_section_list_box_button button {
   width: 300px;
   border-radius: 4px;
   padding: 8px 16px;
-  background: #1B9E4B;
-  color: #F0F1F3;
+  background: #1b9e4b;
+  color: #f0f1f3;
   font-size: 16px;
   font-weight: 500;
   border: none;
   text-align: center;
+  cursor: pointer;
+}
+
+.cupon_section {
+  width: 100%;
+  background-color: #fef1e8;
+}
+
+.cupon_section_card {
+  display: flex;
+  justify-content: space-between;
+  gap: 174px;
+  padding: 52px 0;
+}
+
+.cupon_section_card_item_value {
+  font-size: 32px;
+}
+
+.cupon_section_card_item_content {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.customer_section {
+  margin: 90px 0;
+}
+
+.customer_section_feedback_boxes {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  gap: 180px;
+}
+
+.customer_section_card_feedback {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+
+.customer_section_card_feedback_content {
+  width: 300px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #14161b;
+}
+
+.customer_section_card_feedback_info_box {
+  padding: 28px 62px;
+  background-color: #f6eefe;
+}
+
+
+.customer_section_card_feedback_user_info {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.customer_section_card_feedback_user_info h4 {
+  font-size: 22px;
+}
+
+.customer_section_card_feedback_user_job {
+  font-size: 14px;
+}
+
+.customer_section_feedback_user_lkdn {
+  display: flex;
+  align-items: end;
+  position: absolute;
+  left: 315px;
+  top: 35px;
+}
+
+.customer_section_card_feedback_box_decoration {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 235px;
+  left: 190px;
+  border-style: solid;
+  border-width: 38px 19px 0 19px;
+  border-color: #f6eefe transparent transparent transparent;
+}
+
+.customer_section_card_feedback_user_photo{
+  margin-top: 20px;
+  position: absolute;
+  left: 175px;
+  top: 270px;
 }
