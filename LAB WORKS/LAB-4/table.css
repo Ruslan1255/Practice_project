@@ -7,9 +7,9 @@
 .content_table {
   border: 1px solid black;
   border-collapse: collapse;
-  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
-    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
-    rgba(240, 46, 170, 0.05) 25px 25px;
+  box-shadow: rgba(46, 240, 159, 0.4) 5px 5px, rgba(46, 240, 230, 0.3) 10px 10px,
+    rgba(46, 240, 191, 0.2) 15px 15px, rgba(46, 227, 240, 0.1) 20px 20px,
+    rgba(46, 217, 240, 0.05) 25px 25px;
   margin: 50px;
 }
 
