@@ -24,7 +24,7 @@ a {
   text-decoration: none;
 }
 .container {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -336,7 +336,7 @@ a {
 }
 
 .service_section_menu_item {
-  width: 400px;
+  width: 450px;
   border: 0.5px solid var(--lightgray);
   border-radius: 6px;
   padding: 30px;
@@ -423,9 +423,9 @@ a {
   border-bottom: 4px solid var(--afterhover);
 }
 
-.portfolio_section_menu{
+.portfolio_section_menu {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
@@ -456,4 +456,116 @@ a {
 
 .content_text {
   font-size: 15px;
+}
+
+.pricing {
+  background-color: var(--background);
+  padding: 80px 0;
+}
+.pricing_table {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pricing_table_item {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  background-color: var(--white);
+  border: 0.3px solid var(--lightgray);
+  padding: 50px;
+  border-radius: 8px;
+}
+
+.table_item_title {
+  width: 5.5rem;
+  border: 2px solid var(--blue);
+  border-radius: 50px;
+  padding: 8px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.table_item_text {
+  font-size: 18px;
+  text-align: center;
+  color: var(--text);
+}
+
+.table_item_cost h2 {
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+  padding-left: 15px;
+  font-size: 55px;
+}
+
+.dollar {
+  font-weight: 400;
+  color: var(--dark-3);
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+
+.duration {
+  display: inline-block;
+  font-size: 18px;
+  color: var(--dark-3);
+  font-weight: 400;
+}
+
+.table_item_button button {
+  border: 0.5px solid var(--blue);
+  background-color: var(--white);
+  color: var(--blue);
+  font-size: 18px;
+  font-weight: 700;
+  padding: 12px 18px;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+}
+
+.table_item_button button:hover{
+  background-color: var(--afterhover);
+  color: var(--white);
+}
+
+.descriptions {
+  font-size: 16px;
+  color: var(--text);
+  line-height: 2;
+}
+
+.colored_icon {
+  color: var(--blue);
+}
+
+
+.table_item_title_2{
+  background-color: var(--blue);
+  color: var(--white);
+  width: 5.5rem;
+  border-radius: 50px;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+.table_item_button_2 button{
+  color: var(--white);
+  background-color: var(--blue);
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 12px 18px;
+  cursor: pointer;
 }
