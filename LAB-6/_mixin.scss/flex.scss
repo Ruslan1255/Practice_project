@@ -1,0 +1,7 @@
+@mixin d-flex($display,$justify,$align,$gap){
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+

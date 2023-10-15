@@ -1,0 +1,121 @@
+@import "./flex.scss";
+@import "./variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@700&family=Outfit:wght@500&family=Roboto:wght@300;400;500;900&family=Ubuntu:wght@700&family=Work+Sans:wght@600;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+
+body,
+html {
+  font-size: 10px;
+}
+
+.martex {
+  width: 100%;
+  background-color: $--header_bg;
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px;
+}
+.header {
+  @include d-flex(flex, space-between, center, 4rem);
+  height: 8rem;
+  &_logo {
+    width: 17rem;
+    object-fit: cover;
+  }
+  &_logo img:nth-child(1) {
+    display: block;
+  }
+
+  &_logo img:nth-child(2) {
+    display: none;
+  }
+
+  &_logo img {
+    width: 100%;
+  }
+  &_right {
+    @include d-flex(flex, space-between, center, 9rem);
+
+    .navbar ul {
+      @include d-flex(flex, space-between, _, 6rem);
+      color: $--font_colors;
+      font-size: 1.5rem;
+      font-weight: 600;
+      list-style: none;
+      cursor: pointer;
+    }
+
+    .sign_in_button {
+      margin-right: 1.5rem;
+      border: none;
+      background-color: transparent;
+      color: $--font_colors;
+      padding: 2rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .sign_up_button {
+      border: none;
+      background-color: $--signup_button_bg;
+      color: $--font_colors;
+      padding: 1.5rem;
+      border-radius: 8px;
+      font-size: 1.5rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .responsive_menu {
+      display: none;
+      cursor: pointer;
+      font-size: 2.5rem;
+    }
+  }
+}
+
+// HEADER FINISHED
+// HEADER RESPONSIVE START
+
+@media screen and (max-width: 992px) {
+  body,
+  html {
+    font-size: 6px;
+  }
+
+  .martex {
+    background-color: white;
+    padding: 0 1.5rem;
+
+    .container {
+      width: 100%;
+    }
+
+    .header_logo img:nth-child(1) {
+      display: none;
+    }
+    .header_logo img:nth-child(2) {
+      display: block;
+    }
+
+    .button_container,
+    .navbar {
+      display: none;
+    }
+
+    .responsive_menu {
+      display: block !important;
+      color: gray;
+      font-size: 3.5rem;
+    }
+  }
+}
