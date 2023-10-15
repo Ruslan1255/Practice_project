@@ -389,5 +389,168 @@ section {
   height: 320px;
 }
 
-
-
+.question {
+  height: 500px;
+}
+.question h2 {
+  font-size: 35px;
+}
+.helping_question {
+  width: 500px;
+}
+.help_question1 {
+  margin-top: 50px;
+  font-size: 20px;
+  width: 500px;
+  height: 200px;
+  font-weight: 600;
+}
+.help_question2 {
+  margin-left: 600px;
+  margin-top: -200px;
+  width: 550px;
+  height: 350px;
+  position: relative;
+  column-gap: 50px;
+}
+.negative {
+  padding-top: 30px;
+}
+.plus2 {
+  padding-top: 140px;
+}
+.plus3 {
+  padding-top: 30px;
+}
+.plus4 {
+  padding-top: 30px;
+}
+.helping_question span {
+  column-gap: 20px;
+}
+.information {
+  position: absolute;
+}
+.questioncard_question1 {
+  top: 50px;
+  font-weight: 550;
+}
+.questioncard_question2 {
+  top: 100px;
+  font-weight: 300;
+}
+.questioncard_question3 {
+  top: 200px;
+  font-weight: 550;
+}
+.questioncard_question4 {
+  top: 250px;
+  font-weight: 550;
+}
+.questioncard_question5 {
+  top: 300px;
+  font-weight: 550;
+}
+.punctuation_marks {
+  width: 20px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 640px;
+  margin-top: -20px;
+}
+.create_accound {
+  width: 100%;
+  height: 250px;
+  background-color: #fef1e8;
+}
+.create_accound h2 {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 35px;
+}
+.create_accound_free {
+  margin-left: 520px;
+  margin-top: 50px;
+  width: 200px;
+  height: 50px;
+  background-color: green;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  border: none;
+}
+.create_accound_sing {
+  margin-left: 30px;
+  margin-top: 50px;
+  width: 200px;
+  height: 50px;
+  border: 1px solid #1b9e4b;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #1b9e4b;
+}
+.for_contack {
+  width: 100%;
+  height: 400px;
+  background-color: #667085;
+  position: relative;
+}
+.acconting2 {
+  color: white;
+  padding: 100px;
+  cursor: pointer;
+}
+.for_contack h4 {
+  padding-left: 100px;
+  margin-top: -50px;
+  color: white;
+  font-size: 13px;
+}
+.contack_features {
+  width: 150px;
+  height: 300px;
+  position: absolute;
+  left: 500px;
+  top: 100px;
+  color: white;
+}
+.contack_resources {
+  width: 150px;
+  height: 300px;
+  position: absolute;
+  left: 700px;
+  color: white;
+  top: 100px;
+}
+.contack_aboutus {
+  width: 150px;
+  height: 300px;
+  color: white;
+  position: absolute;
+  right: 400px;
+  top: 100px;
+}
+.contack_followus {
+  width: 150px;
+  height: 300px;
+  color: white;
+  position: absolute;
+  right: 200px;
+  top: 100px;
+}
+.contack_information li {
+  font-size: 13px;
+  padding-top: 15px;
+  cursor: pointer;
+}
+.contack_features span {
+  font-size: 20px;
+}
+.plus {
+  margin-left: 500px;
+}
+.minus {
+  padding-left: 500px;
+}
