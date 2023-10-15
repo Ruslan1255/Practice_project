@@ -16,7 +16,6 @@ a {
 }
 header {
   box-shadow: 0px 4px 60px 0px #00000014;
-
   width: 100%;
 }
 
@@ -289,7 +288,6 @@ section {
   background-color: #f6eefe;
 }
 
-
 .customer_section_card_feedback_user_info {
   margin-top: 70px;
   display: flex;
@@ -325,9 +323,71 @@ section {
   border-color: #f6eefe transparent transparent transparent;
 }
 
-.customer_section_card_feedback_user_photo{
+.customer_section_card_feedback_user_photo img {
   margin-top: 20px;
   position: absolute;
   left: 175px;
   top: 270px;
 }
+
+.button_section {
+  margin: 90px 0;
+  padding: 20px;
+}
+
+.button_section_card {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.button_section_card button {
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 50px;
+  background: #667085;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.partners_menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  text-align: center;
+}
+
+.partners_menu_item {
+  width: 300px;
+  background: #f0f1f3;
+  border-radius: 4px;
+  padding: 30px 80px;
+}
+
+.questions_section_card_title {
+  margin: 80px 0;
+  padding: 30px 0;
+  font-size: 36px;
+  font-weight: 600;
+  color: #0a0b0d;
+}
+
+.questions_section_card_question_table {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_question {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1f2228;
+}
+
+.other_question_list {
+  width: 705px;
+  height: 320px;
+}
+
+
+
