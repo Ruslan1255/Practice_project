@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@700&family=Outfit:wght@500&family=Poppins:wght@700&family=Roboto:wght@300;400;500;900&family=Ubuntu:wght@700&family=Work+Sans:wght@600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+  list-style: none;
+  text-decoration: none;
+}
+
+body,
+html {
+  font-size: 10px;
+}
+
+.helpers {
+  width: 100%;
+  background-color: #F0F1F3;
+}
+
+.container {
+  margin: 0 5rem;
+}
+
+.header {
+  display: flex;
+  flex-wrap: _;
+  flex-direction: _;
+  justify-content: space-between;
+  align-items: center;
+  gap: _;
+  height: 8rem;
+  width: 100%;
+}
+.header_left a {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #2A5055;
+  cursor: pointer;
+}
+.header .navbar_list {
+  display: flex;
+  flex-wrap: _;
+  flex-direction: _;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+.header .navbar_list_item a {
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+}
+.header .header_button_container {
+  display: flex;
+  flex-wrap: _;
+  flex-direction: _;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.2rem;
+}
+.header button {
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.header .donate_button {
+  background-color: #2A5055;
+  border: none;
+  color: white;
+}
+.header .signup_button {
+  border: 1px solid #2A5055;
+  color: #2A5055;
+}
+.header .responsive_menu_button {
+  font-size: 2.5rem;
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    background-color: #F0F1F3;
+  }
+  .navbar,
+  .header_button_container {
+    display: none !important;
+    gap: 15rem;
+  }
+  .responsive_menu_button {
+    display: block !important;
+    cursor: pointer;
+  }
+}
+.home {
+  width: 100%;
+}
+
+.home_section_bg {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  background-image: url("../assets/Home_section_bg_img/Helper/Rectangle 8.png") !important;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  height: 55rem !important;
+  max-width: 100%;
+}
+.home_section_bg .home_section_content {
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: _;
+  flex-direction: column;
+  justify-content: _;
+  align-items: _;
+  gap: 10rem;
+}
+.home_section_bg .home_section_content_title {
+  color: white;
+  font-size: 3.6rem;
+  font-weight: 500;
+}
+.home_section_bg .home_section_content_btn button {
+  border: none;
+  border-radius: 0.8rem;
+  padding: 1.2rem 4.4rem;
+  background-color: #FA8F45;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  .home_section_bg {
+    height: 25rem !important;
+  }
+  .home_section_content {
+    display: flex;
+    flex-wrap: _;
+    flex-direction: column;
+    justify-content: _;
+    align-items: _;
+    gap: 2rem;
+  }
+  .home_section_content_title {
+    font-size: 1.6rem !important;
+    font-weight: 400;
+  }
+  .home_section_content_btn button {
+    padding: 0.8rem 2rem;
+  }
+}
+.catagories {
+  margin-top: 9rem;
+}
+.catagories .catagories_section_content {
+  display: flex;
+  flex-wrap: _;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 3rem;
+}
+.catagories .catagories_section_content_title {
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+.catagories .catagories_section_content_options {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: _;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+}
+.catagories .catagories_section_content_options_item_bg {
+  height: 30rem;
+  width: 35rem;
+  background-image: url("../assets/Rectangle 115.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 0.8rem;
+  position: relative;
+  cursor: pointer;
+}
+.catagories .catagories_section_content_options .bg2 {
+  background-image: url("../assets/Rectangle 115 (2).png");
+}
+.catagories .catagories_section_content_options .bg3 {
+  background-image: url("../assets/Rectangle 115.jpg");
+}
+.catagories .catagories_section_content_options .bg4 {
+  background-image: url("../assets/Rectangle 115 (3).png");
+}
+.catagories .catagories_section_content_options_item_link {
+  font-size: 2rem;
+  color: white;
+  padding: 0 1rem;
+  width: 100%;
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  flex-wrap: _;
+  flex-direction: _;
+  justify-content: space-between;
+  align-items: center;
+  gap: _;
+}
+
+@media screen and (max-width: 992px) {
+  .catagories {
+    margin-top: 9rem;
+  }
+  .catagories_section_content_title {
+    font-size: 2.4rem !important;
+    font-weight: 400;
+    margin: 0 auto;
+  }
+  .catagories .catagories_section_content_options {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: 100%;
+  }
+  .catagories .catagories_section_content_options_item {
+    width: 100%;
+  }
+  .catagories .catagories_section_content_options_item_bg {
+    height: 8rem;
+    width: 100%;
+    background-image: url("../assets/Rectangle 115.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 0.8rem;
+    position: relative;
+  }
+  .catagories .catagories_section_content_options .bg2 {
+    background-image: url("../assets/Rectangle 115 (2).png");
+  }
+  .catagories .catagories_section_content_options .bg3 {
+    background-image: url("../assets/Rectangle 115.jpg");
+  }
+  .catagories .catagories_section_content_options .bg4 {
+    background-image: url("../assets/Rectangle 115 (3).png");
+  }
+  .catagories .catagories_section_content_options_item_link {
+    font-size: 2rem;
+    color: white;
+    padding: 0 1rem;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    flex-wrap: _;
+    flex-direction: _;
+    justify-content: space-between;
+    align-items: center;
+    gap: _;
+  }
+}/*# sourceMappingURL=main.css.map */

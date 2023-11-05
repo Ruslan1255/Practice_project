@@ -1,0 +1,14 @@
+@mixin d-flex($display, $wrap, $direction, $justify, $aling, $gap) {
+  display: $display;
+  flex-wrap: $wrap;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $aling;
+  gap: $gap;
+}
+
+@mixin grid($columns, $rows, $areas) {
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+  grid-template-areas: $areas;
+}

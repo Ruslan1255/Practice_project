@@ -1,0 +1,399 @@
+@import "../mixins";
+
+$--colorgreen: #2a5055;
+$--colororange: #fa8f45;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: $--colorgreen;
+  text-decoration: none;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+.container {
+  padding: 0 108.5px;
+  margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  html,
+  body {
+    font-size: 8px;
+
+    .container {
+      padding: 0 7rem;
+    }
+  }
+}
+
+// ----------------------------Header start---------------------------
+
+header {
+  height: 3.4rem;
+  padding: 5px;
+  background-color: #f0f1f3;
+
+  .header_box {
+    @include d-flex(flex, nowrap, _, space-between, center, _, _);
+    margin-top: 10px;
+
+    &_logo_name {
+      color: $--colorgreen;
+      font-size: 1rem;
+      line-height: 32px;
+    }
+
+    &_nav ul {
+      @include d-flex(flex, nowrap, _, _, _, _, 2rem);
+      color: $--colorgreen;
+      font-size: 0.8rem;
+    }
+
+    &_button {
+      @include d-flex(flex, _, _, _, _, _, 0.6rem);
+
+      &_donate {
+        min-width: 4.2rem;
+        min-height: 2rem;
+        background-color: $--colorgreen;
+        color: white;
+        border-radius: 0.4rem;
+        font-size: 0.7rem;
+      }
+
+      &_signup {
+        min-width: 4.25rem;
+        min-height: 2rem;
+        border: 1px solid $--colorgreen;
+        border-radius: 0.4rem;
+        font-size: 0.7rem;
+      }
+    }
+
+    &_icon {
+      min-width: 1.75rem;
+      min-height: 1.75rem;
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    .header_box_logo_name {
+      font-size: 20px;
+      margin-top: -20px;
+    }
+
+    .header_box_nav {
+      display: none;
+    }
+
+    .header_box_button {
+      display: none;
+    }
+
+    .header_box_icon {
+      display: block;
+      font-size: 20px;
+      margin-top: -20px;
+    }
+  }
+}
+
+// ----------------------------Header finis----------------------------
+
+//-------------------------------------------------------- Main start ---------------------------------------------------------
+
+.page_name {
+  margin-top: 2.6rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.announcements {
+  margin-top: 2.6rem;
+
+  &_navbar {
+    @include d-flex(flex, _, _, space-between, _, _, _);
+
+    &_search {
+      @include d-flex(flex, _, _, space-between, _, _, 0.6rem);
+
+      &_bar {
+        @include d-flex(flex, nowrap, _, _, center, _, 0.6rem);
+
+        input {
+          width: 12rem;
+          height: 2.2rem;
+          border-radius: 8px;
+          position: relative;
+          padding-left: 2.8rem;
+          font-size: 0.6rem;
+          line-height: 0.9rem;
+        }
+
+        &_icon {
+          position: absolute;
+          color: gray;
+          padding-left: 1.2rem;
+        }
+      }
+
+      button {
+        height: 2.2rem;
+        border-radius: 8px;
+        border: none;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        color: #667085;
+      }
+
+      button:nth-child(2) {
+        color: white;
+        width: 3.35rem;
+        background-color: #2a5055;
+      }
+      button:nth-child(3) {
+        // width: 6.45rem;
+        background-color: #f0f1f3;
+      }
+      button:nth-child(4) {
+        // width: 4.5rem;
+        background-color: #f0f1f3;
+      }
+      button:nth-child(5) {
+        // width: 5.8rem;
+        background-color: #f0f1f3;
+      }
+      button:nth-child(6) {
+        // width: 5.5rem;
+        background-color: #f0f1f3;
+      }
+    }
+
+    &_type {
+      button {
+        // width:9.1rem ;
+        height: 2.2rem;
+        border-radius: 8px;
+        border: none;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        color: #667085;
+      }
+    }
+  }
+
+  &_card {
+    @include d-grid(grid, 1fr 1fr 1fr, _, space-between, _, _, 2.8rem);
+    border: 1px solid black;
+    margin-top: 1.4rem;
+
+    &_box {
+      max-width: 19.6rem;
+      height: 26.75rem;
+
+      &_imgbox {
+        position: relative;
+        display: flex;
+
+        img {
+          border-radius: 8px;
+          max-width: 100%;
+        }
+
+        &_icon {
+          right: 5%;
+          top: 5%;
+          position: absolute;
+          background-color: #f0f1f3;
+        }
+      }
+
+      &_information {
+        h3 {
+          font-size: 1rem;
+          line-height: 1.6rem;
+          margin-top: 0.95rem;
+        }
+
+        &_story {
+          font-weight: 300;
+          font-size: 1rem;
+          line-height: 1.6rem;
+          margin-top: 8px;
+        }
+
+        &_donationbox {
+          margin-top: 15px;
+
+          &_time {
+            font-weight: 300;
+            font-size: 0.8rem;
+            line-height: 1.2rem;
+          }
+
+          &_bar {
+            height: 10px;
+            border-radius: 2px;
+            background-color: #f0f1f3;
+
+            &_left_card1 {
+              width: 30%;
+              height: 0.5rem;
+              background-color: #fa8f45;
+            }
+            &_left_card2 {
+              width: 50%;
+              height: 0.5rem;
+              background-color: #fa8f45;
+            }
+            &_left_card3 {
+              width: 70%;
+              height: 0.5rem;
+              background-color: #fa8f45;
+            }
+            &_left_card4 {
+              width: 90%;
+              height: 0.5rem;
+              background-color: #fa8f45;
+            }
+            &_left_card5 {
+              width: 50%;
+              height: 0.5rem;
+              background-color: #fa8f45;
+            }
+            &_left_card6 {
+              width: 90%;
+              height: 0.5rem;
+              background-color: #fa8f45;
+            }
+          }
+
+          &_pricenow {
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 1.6rem;
+          }
+          &_pricegoal {
+            padding-left: 8px;
+            font-weight: 300;
+            font-size: 0.9rem;
+            line-height: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+
+  &_button {
+    width: 5.35rem;
+    height: 2rem;
+    border-radius: 8px;
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+    background-color: transparent;
+    margin: 3.6rem 0 0 50%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .announcements {
+    &_card {
+      @include d-grid(grid, 1fr 1fr, _, _, _, _, _);
+    }
+  }
+}
+
+//-------------------------------------------------------- Footer start --------------------------------------------------------
+footer {
+  margin-top: 3.65rem;
+  height: 23.3rem;
+  background-color: #f0f1f3;
+  // @include d-flex(flex, nowrap, _,_, _, _, _);
+
+  .footer_navigation {
+    @include d-flex(flex, nowrap, _, space-between, center, _, 6.4rem);
+    width: 61.15rem;
+    height: 18.8rem;
+
+    ul {
+      @include d-flex(flex, wrap, column, _, _, _, 0.7rem);
+      font-size: 0.8rem;
+      line-height: 1.2rem;
+      margin-top: 0.8rem;
+    }
+
+    &_singup {
+      input {
+        padding-left: 1rem;
+        width: 12.15rem;
+        height: 2.4rem;
+        border-radius: 8px;
+        background-color: transparent;
+      }
+
+      ::placeholder {
+        font-size: 0.7rem;
+        line-height: 1.2rem;
+        color: #667085;
+      }
+
+      button {
+        width: 5.5rem;
+        height: 2.4rem;
+        border-radius: 8px;
+        border: none;
+        color: white;
+        background-color: #fa8f45;
+      }
+    }
+  }
+
+  .footer_emphty {
+    width: 100%;
+    border-top: 1px solid black;
+  }
+
+  .page_information {
+    @include d-flex(flex, _, _, space-between, _, _, _);
+    margin-top: 2.15rem;
+    width: 61.15rem;
+
+    &_card {
+      margin-left: 2.175rem;
+      display: flex;
+      gap: 1rem;
+      width: 15.75rem;
+      height: 1.2rem;
+      font-size: 0.7rem;
+    }
+
+    &_contack {
+      display: flex;
+      gap: 1.5rem;
+      color: gray;
+      padding-left: 1.5rem;
+    }
+  }
+}

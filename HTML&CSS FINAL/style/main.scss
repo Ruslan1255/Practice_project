@@ -1,0 +1,613 @@
+@import "./mixin.scss";
+@import "./variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@700&family=Outfit:wght@500&family=Poppins:wght@700&family=Roboto:wght@300;400;500;900&family=Ubuntu:wght@700&family=Work+Sans:wght@600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+  list-style: none;
+  text-decoration: none;
+}
+// @media screen and (max-width:992px) {
+//   body,html{
+//     font-size: 10px;
+//   }
+
+// }
+body,
+html {
+  font-size: 10px;
+}
+
+.helpers {
+  width: 100%;
+  background-color: $--header_bg;
+}
+.container {
+  margin: 0 5rem;
+}
+.header {
+  @include d-flex(flex, _, _, space-between, center, _);
+  height: 8rem;
+  width: 100%;
+  &_left a {
+    font-size: 3rem;
+    font-weight: 600;
+    color: $--primary_color;
+    cursor: pointer;
+  }
+
+  .navbar_list {
+    @include d-flex(flex, _, _, space-between, center, 4rem);
+    &_item a {
+      font-size: 2rem;
+      color: $--secondary_color;
+      cursor: pointer;
+    }
+  }
+  .header_button_container {
+    @include d-flex(flex, _, _, space-between, center, 1.2rem);
+  }
+  & button {
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .donate_button {
+    background-color: $--primary_color;
+    border: none;
+    color: $--text_color;
+  }
+  .signup_button {
+    border: 1px solid $--primary_color;
+    color: $--primary_color;
+  }
+  .responsive_menu_button {
+    font-size: 2.5rem;
+    display: none;
+  }
+}
+
+//  HEADER FINISHED
+//  HEADER RESPONSIVE DESIGN STARTED
+
+@media screen and (max-width: 992px) {
+  .header {
+    background-color: $--header_bg;
+  }
+  .navbar,
+  .header_button_container {
+    display: none !important;
+    gap: 15rem;
+  }
+  .responsive_menu_button {
+    display: block !important;
+    cursor: pointer;
+  }
+}
+
+//  HEADER RESPONSIVE DESIGN FINISHED
+
+//  HOME SECTION DESIGN STARTED
+.home {
+  width: 100%;
+}
+
+.home_section_bg {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  background-image: url("../assets/Home_section_bg_img/Helper/Rectangle 8.png") !important;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  height: 55rem !important;
+  max-width: 100%;
+  .home_section_content {
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include d-flex(flex, _, column, _, _, 10rem);
+
+    &_title {
+      color: $--text_color;
+      font-size: 3.6rem;
+      font-weight: 500;
+    }
+
+    &_btn button {
+      border: none;
+      border-radius: 0.8rem;
+      padding: 1.2rem 4.4rem;
+      background-color: $--home_sctn_btn_clr;
+      color: $--text_color;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  }
+}
+
+//  HOME SECTION DESIGN FINISHED
+//  HOME SECTION RESPONSIVE DESIGN STARTED
+
+@media screen and (max-width: 992px) {
+  .home_section_bg {
+    height: 25rem !important;
+  }
+  .home_section_content {
+    @include d-flex(flex, _, column, _, _, 2rem);
+    &_title {
+      font-size: 1.6rem !important;
+      font-weight: 400;
+    }
+
+    &_btn button {
+      padding: 0.8rem 2rem;
+    }
+  }
+}
+
+//  HOME SECTION RESPONSIVE DESIGN FINISHED
+
+//  CATAGORIES SECTION DESING STARTED
+
+.catagories {
+  margin-top: 9rem;
+  .catagories_section_content {
+    @include d-flex(flex, _, column, space-between, start, 3rem);
+    &_title {
+      font-size: 3.2rem;
+      font-weight: 400;
+    }
+    &_options {
+      @include d-flex(flex, wrap, _, space-between, center, 3rem);
+      width: 100%;
+      &_item_bg {
+        height: 30rem;
+        width: 35rem;
+        background-image: url("../assets/Rectangle\ 115.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 0.8rem;
+        position: relative;
+        cursor: pointer;
+      }
+      .bg2 {
+        background-image: url("../assets/Rectangle\ 115\ \(2\).png");
+      }
+      .bg3 {
+        background-image: url("../assets/Rectangle\ 115.jpg");
+      }
+      .bg4 {
+        background-image: url("../assets/Rectangle\ 115\ \(3\).png");
+      }
+      &_item_link {
+        font-size: 2rem;
+        color: $--text_color;
+        padding: 0 1rem;
+        width: 100%;
+        position: absolute;
+        bottom: 2rem;
+        @include d-flex(flex, _, _, space-between, center, _);
+      }
+    }
+  }
+}
+
+//  CATAGORIES SECTION DESIGN FINISHED
+//  CATAGORIES SECTION RESPONSIVE DESING STARTED
+@media screen and (max-width: 992px) {
+  .catagories {
+    margin-top: 9rem;
+    &_section_content_title {
+      font-size: 2.4rem !important;
+      font-weight: 400;
+      margin: 0 auto;
+    }
+    .catagories_section_content_options {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      width: 100%;
+      &_item {
+        width: 100%;
+      }
+      &_item_bg {
+        height: 8rem;
+        width: 100%;
+        background-image: url("../assets/Rectangle\ 115.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 0.8rem;
+        position: relative;
+      }
+      .bg2 {
+        background-image: url("../assets/Rectangle\ 115\ \(2\).png");
+      }
+      .bg3 {
+        background-image: url("../assets/Rectangle\ 115.jpg");
+      }
+      .bg4 {
+        background-image: url("../assets/Rectangle\ 115\ \(3\).png");
+      }
+      &_item_link {
+        font-size: 2rem;
+        color: $--text_color;
+        padding: 0 1rem;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        @include d-flex(flex, _, _, space-between, center, _);
+      }
+    }
+  }
+}
+.volunteers {
+  &_cards {
+    @include d-grid(grid, 1fr 1fr 1fr, _, _, _, _, 1.2rem);
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    padding-bottom: 24px;
+  }
+
+  &_card:nth-child(6) {
+    @include d-flex(flex, _, column, _, _, _, _);
+    text-align: center;
+    border: 2px solid #667085;
+
+    .volunteers_card_button {
+      width: 8.8rem;
+      height: 2.4rem;
+      background-color: #c9eaef;
+      border-radius: 8px;
+      border: none;
+      margin-top: 3rem;
+      color: #0e0f0f;
+      font-size: 0.8rem;
+
+      .volunteers_card_icon_arrow {
+        color: #344054;
+        padding-left: 12px;
+      }
+    }
+  }
+
+  &_card {
+    @include d-flex(flex, _, _, center, center, _, _);
+    height: 21.4rem;
+    border-radius: 8px;
+    border: 1px solid #a8a7a7;
+
+    &_title {
+      @include d-flex(flex, _, column, _, center, _, 1.2rem);
+      text-align: center;
+
+      &_icon {
+        font-size: 2rem;
+        color: #65c5d5;
+      }
+
+      article {
+        text-align: center;
+        color: #292d35;
+        font-size: 0.7rem;
+        font-weight: 300;
+        line-height: 1.2rem;
+      }
+
+      h3 {
+        color: #292d35;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .volunteers {
+    h2 {
+      text-align: center;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    &_cards {
+      @include d-grid(grid, 1fr 1fr 1fr, _, _, _, _, _);
+
+      p {
+        display: none;
+      }
+    }
+
+    &_card {
+      &_title_icon {
+        font-size: 30px;
+      }
+
+      h3 {
+        font-size: 10px;
+        margin-top: 20px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+// -------------------------volunteers finis-------------------------
+
+// -------------------------statistics start -------------------------
+
+.statistics {
+  @include d-flex(flex, wrap, _, space-evenly, center, _, _);
+
+  height: 13.8rem;
+  background-color: #e4f4f7;
+
+  &_boxs {
+    @include d-flex(flex, wrap, _, _, _, _, 5.6rem);
+
+    .statistics_box {
+      border-left: 1px solid #c4dfe4;
+      padding: 0 8px 0 24px;
+    }
+
+    p {
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+  }
+}
+
+// -------------------------statistics finis-------------------------
+
+//------------------------- helping_card start -------------------------
+
+.helping_card {
+  height: 17.2rem;
+  @include d-flex(flex, _, _, space-between, center, _, _);
+
+  img {
+    border-radius: 8px;
+  }
+
+  h3 {
+    padding-bottom: 1.2rem;
+  }
+
+  article {
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .helping_card {
+    text-align: center;
+    font-size: 20px;
+
+    article {
+      font-size: 20px;
+      text-align: center;
+      line-height: 22px;
+    }
+
+    img {
+      display: none;
+    }
+  }
+}
+//------------------------- helping_card end-------------------------
+
+// -------------------------help_human_cards start-------------------------
+
+.help_human {
+  height: 16rem;
+  background-color: #f3fdff;
+  padding-left: 5.475rem;
+
+  &_cards {
+    @include d-flex(flex, _, _, space-between, _, _, _);
+    height: 13.45rem;
+
+    .help_human_card {
+      @include d-flex(flex, _, column, _, center, _, 6px);
+
+      span {
+        font-size: 12px;
+        font-weight: 300;
+      }
+
+      h5 {
+        font-weight: 400;
+      }
+    }
+
+    .help_human_card {
+      width: 6.3rem;
+      height: 7.7rem;
+    }
+
+    img {
+      width: 4.9rem;
+      height: 4.9rem;
+    }
+  }
+
+  h3 {
+    padding-top: 2.55rem;
+    padding-bottom: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .help_human {
+    .help_human_card_display_none {
+      display: none;
+    }
+  }
+}
+
+// // -------------------------help_human_cards end-------------------------
+
+// // -------------------------succes_story_card start -------------------------
+
+.succes_story_card {
+  height: 17.2rem;
+  @include d-flex(flex, _, _, space-between, center, _, _);
+
+  img {
+    border-radius: 8px;
+  }
+
+  &_text {
+    h3 {
+      padding-bottom: 1.2rem;
+    }
+
+    article {
+      height: 144px;
+      font-size: 1rem;
+      line-height: 1.8rem;
+    }
+  }
+
+  .succes_story_card_icon1 {
+    color: #a3a9b6;
+    padding-right: 1rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+
+  .succes_story_card_icon {
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .succes_story_card {
+    text-align: center;
+    font-size: 20px;
+
+    article {
+      font-size: 20px;
+      text-align: center;
+      line-height: 22px;
+    }
+
+    img {
+      display: none;
+    }
+  }
+}
+
+// // -------------------------succes_story_card end-------------------------
+
+// //------------------------- partners_card start -------------------------
+
+.partners_box {
+  @include d-flex(flex, _, column, space-between, _, _, _);
+  height: 8.5rem;
+  text-align: center;
+
+  &_card {
+    @include d-flex(flex, wrap, _, space-between, center, _, _);
+    height: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .partners_box {
+    img {
+      width: 15%;
+    }
+  }
+}
+
+// // // -------------------------partners_card end-------------------------
+
+// //-------------------------------------------------------- Footer start --------------------------------------------------------
+
+footer {
+  height: 23.3rem;
+  background-color: #f0f1f3;
+  margin-top: 90px;
+
+  .footer_navigation {
+    @include d-flex(flex, nowrap, _, space-between, center, _, 6.4rem);
+    height: 18.8rem;
+
+    ul {
+      @include d-flex(flex, wrap, column, _, _, _, 0.7rem);
+      font-size: 0.8rem;
+      line-height: 1.2rem;
+      margin-top: 0.8rem;
+    }
+
+    &_singup {
+      input {
+        padding-left: 1rem;
+        max-width: 12.15rem;
+        height: 2.4rem;
+        border-radius: 8px;
+        background-color: transparent;
+      }
+
+      ::placeholder {
+        font-size: 0.7rem;
+        line-height: 1.2rem;
+        color: #667085;
+      }
+
+      button {
+        width: 5.5rem;
+        height: 2.4rem;
+        border-radius: 8px;
+        border: none;
+        color: white;
+        background-color: #fa8f45;
+      }
+    }
+  }
+
+  .footer_emphty {
+    width: 100%;
+    border-top: 1px solid black;
+  }
+
+  .page_information {
+    @include d-flex(flex, _, _, space-between, _, _, _);
+    margin: 2.1rem 7.175rem;
+
+    &_card {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.7rem;
+    }
+
+    &_contack {
+      cursor: pointer;
+      display: flex;
+      gap: 30px;
+      color: gray;
+      padding-left: 1.5rem;
+    }
+    &_contack:hover {
+      color: #0c63d4;
+    }
+  }
+  .footer_tablet {
+    display: flex;
+  }
+}
