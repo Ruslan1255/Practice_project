@@ -18,7 +18,10 @@ console.log(`The area of the rectangle is: ${area}`);
 // 1.3 Implement a function `isEven` that checks if a given number is even. Return `true` if it is, otherwise `false`.
 
 function isEven(number) {
-  return number % 2 === 0;
+  if (number % 2 === 0) {
+    return true;
+  }
+  else false
 }
 
 console.log(isEven(4));
@@ -58,7 +61,7 @@ console.log(filterEvenNumbers(myArray2));
 // #### Task 3: Object and Methods
 // 3.1 Define an object `person` with properties `name`, `age`, and `city`. Write a function `displayPersonInfo` that prints the information in a readable format.
 let person = {
-  name: "John",
+  name: "Johnny",
   age: 25,
   city: "New York",
 };
@@ -71,7 +74,7 @@ displayPersonInfo(person);
 
 // 3.2 Extend the `person` object by adding a method `haveBirthday` that increments the age by 1 each time it's called.
 const human = {
-  name: "John",
+  name: "Johnny",
   age: 25,
   city: "New York",
   haveBirthday: function () {
