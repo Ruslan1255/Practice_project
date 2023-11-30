@@ -132,35 +132,78 @@
 // }
 
 // const result = truncateString("Hello world", 5);
-// console.log(result);
+
+// document.write(result);
 
 // TASK 8
 // Write program that truncates string in a given length, but it should not break the word: 'Hello world, nice talking to you', 20 => 'Hello world, nice...'
 
-function truncateStringWithoutBreakingWord(sentence, length) {
-  if (sentence.length > length) {
-    let truncated = "";
-    let currentLength = 0;
+// function truncateString(s, length) {
+//   if (s.length > length) {
+//     let truncated = s.substring(0, length);
+//     const lastSpaceIndex = truncated.lastIndexOf(" ");
 
-    for (let i = 0; i < sentence.length; i++) {
-      truncated += sentence[i];
-      currentLength++;
+//     if (lastSpaceIndex !== -1) {
+//       truncated = truncated.substring(0, lastSpaceIndex);
+//     }
 
-      if (currentLength === length) {
-        // Check if the next character is a space or the last character
-        if (sentence[i + 1] === " " || i === sentence.length - 1) {
-          return truncated + "...";
-        }
-      }
-    }
-  }
-  return sentence;
-}
+//     return truncated + "...";
+//   } else {
+//     return s;
+//   }
+// }
 
-const result = truncateStringWithoutBreakingWord(
-  "Hello world, nice talking to you",
-  20
-);
-console.log(result);
+// const result = truncateString("Hello world, nice talking to you", 20);
 
+// document.write(result);
 
+// TASK 9
+//Create a program to calculate the sum of the elements in an array of numbers: [1, 2, 3, 4, 5] => 15
+
+// function calculateSum(array) {
+//   let sum = 0;
+//   for (let i = 0; i < array.length; i++) {
+//     sum += array[i];
+//   }
+//   return sum;
+// }
+
+// const numbers = [1, 2, 3, 4, 5];
+// const result = calculateSum(numbers);
+
+// document.write(result);
+
+// TASK 10
+// Create a program to calculate the average of the elements in an array of numbers: [1, 2, 3, 4, 5] => 3
+
+// function getSum(arr) {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i] / arr.length;
+//   }
+//   return sum;
+// }
+
+// const numbers = [1, 2, 3, 4, 5];
+// const result = getSum(numbers);
+
+// document.write(result);
+
+// TASK 11
+// Create a program to find the maximum number in an array of numbers: [1, 2, 3, 4, 5] => 5
+
+// function getMaxNumber(array) {
+//   let max = array[0];
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] > max) {
+//       max = array[i];
+//     }
+//   }
+//   return max;
+// }
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, , 9, 10];
+// const result = getMaxNumber(numbers);
+// document.write(result);
+
+// TASK 12
