@@ -16,16 +16,24 @@
   <body>
     <button id="openModalBtn">Open Modal</button>
 
-  <div id="myModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <p>Sure u want to accept?</p>
-      <form>Write your name</form>
-      <input type="text" id="inputValue" placeholder="Your name">
-      <button id="confirmBtn">Yes, Confirm</button>
-      <button class="cancelBtn">No cancel</button>
+    <div class="modal">
+      <div class="modal_content">
+        <i class="fa-solid fa-circle-xmark" id="close"></i>
+        <div class="container">
+          <h2 class="title">Sure u want to accept?</h2>
+
+          <div class="input_box">
+            <label class="label" for="inputValue">Write your name</label>
+            <input type="text" id="inputValue" placeholder="Your name" />
+          </div>
+
+          <div class="button_box">
+            <button class="cancel_btn">No, cancel</button>
+            <button class="confirm_btn">Yes, Confirm</button>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
     <script src="main.js"></script>
   </body>

@@ -1,28 +1,26 @@
 "use strict";
-document.addEventListener('DOMContentLoaded', function () {
-  const openModalBtn = document.getElementById('openModalBtn');
-  const modal = document.getElementById('myModal');
-  const closeModalBtn = document.querySelector('.close');
-  const cancelBtn = document.querySelector('.cancelBtn');
-  const confirmBtn = document.getElementById('confirmBtn');
-  const inputValue = document.getElementById('inputValue');
 
-  openModalBtn.addEventListener('click', function () {
-    modal.style.display = 'block';
-  });
+const openModalBtn = document.getElementById("openModalBtn");
+const closeModalBtn = document.getElementById("close");
+const cancelBtn = document.querySelector(".cancel_btn");
+const confirmBtn = document.querySelector("confirm_btn");
+const showInput = document.querySelector(".modal");
 
-  closeModalBtn.addEventListener('click', function () {
-    modal.style.display = 'none';
-  });
+openModalBtn.addEventListener("click", () => {
+  showInput.classList.add("show_input");
+});
 
-  cancelBtn.addEventListener('click', function () {
-    modal.style.display = 'none';
-  });
+confirmBtn = addEventListener("click", () => {
+  let inputElement = document.getElementById("yourInputId");
+  let value = inputElement.value;
+  console.log(value);
+  alert(value);
+});
 
-  confirmBtn.addEventListener('click', function () {
-    const inputText = inputValue.value;
-    console.log('Input Value:', inputText);
-    alert('Input Value: ' + inputText);
-    modal.style.display = 'none';
-  });
+closeModalBtn.addEventListener("click", () => {
+  showInput.classList.remove("show_input");
+});
+
+cancelBtn.addEventListener("click", () => {
+  showInput.classList.remove("show_input");
 });
