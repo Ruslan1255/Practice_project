@@ -2,19 +2,19 @@
 const password = document.querySelector(".form_box_password-input");
 const form = document.querySelector(".form_box");
 const tableBody = document.querySelector(".table_box tbody");
+const nameInput = document.querySelector(".form_box_name-input");
+const surnameInput = document.querySelector(".form_box_surname-input");
 
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  const nameInput = document.querySelector(".form_box_name-input");
-  const surnameInput = document.querySelector(".form_box_surname-input");
 
   const name = nameInput.value.trim();
   const surname = surnameInput.value.trim();
   const passwordValue = password.value;
 
-  if (name === "" || surname === "" || passwordValue === "") {
+  if (name === " " || surname === " " || passwordValue === " ") {
     alert("Please fill in all fields.");
     return;
   }
