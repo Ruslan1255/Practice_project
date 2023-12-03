@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: aqua;
 }
 
@@ -24,6 +24,7 @@ input:invalid {
   height: 400px;
   border-radius: 8px;
 }
+
 .form_box {
   display: flex;
   align-items: center;
@@ -31,6 +32,7 @@ input:invalid {
   gap: 20px;
   padding: 50px 0 0 5px;
 }
+
 .form_box input {
   width: 360px;
   height: 50px;
@@ -53,6 +55,7 @@ button {
   cursor: pointer;
   background: #fff;
 }
+
 table {
   width: 500px;
   height: 100px;
@@ -67,4 +70,4 @@ table,
 th,
 td {
   border: 1px solid black;
-}
+}/*# sourceMappingURL=style.css.map */
