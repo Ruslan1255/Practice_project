@@ -17,7 +17,6 @@ addBtn.addEventListener("click", () => {
   removeBtn.classList.add("fa-solid");
   removeBtn.classList.add("fa-times");
 
-  taskItem.appendChild(removeBtn);
 
   const listBox = document.createElement("div");
   listBox.appendChild(taskItem);
