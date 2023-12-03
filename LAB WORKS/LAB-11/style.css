@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background-color: #24587d;
+}
+
+h1 {
+  text-align: center;
+  margin: 80px;
+  color: white;
+  font-size: 60px;
+}
+
+.list_container {
+  width: 600px;
+  position: absolute;
+  left: 50%;
+  border: 1px solid #3b6f96;
+  padding: 20px 30px;
+  min-height: 500px;
+  transform: translateX(-50%);
+}
+.list_container .list_input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list_container .list_input input {
+  width: 90%;
+  height: 50px;
+  padding: 10px;
+  outline: none;
+}
+.list_container .list_input .add_btn {
+  color: #6789a3;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+li {
+  background-color: cyan;
+  padding: 20px;
+  margin: 20px 0;
+  width: 90%;
+  display: inline-block;
+}
+
+#taskList div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#taskList div i {
+  color: #6789a3;
+  font-size: 24px;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
