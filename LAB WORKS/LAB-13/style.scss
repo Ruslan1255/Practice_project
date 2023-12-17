@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-image: url("Assests/bg\ image.avif");
+}
+
+#title {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 40px;
+  color: white;
+}
+
+.selected_location {
+  margin: 30px auto;
+  width: 500px;
+  height: min-content;
+  padding: 30px;
+  .location {
+    width: 100%;
+    height: 30px;
+    border: none;
+    padding: 20px;
+    border-bottom: 2px solid blue;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    &::placeholder {
+      color: white;
+    }
+  }
+}
+
+.wheather_result {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  &_location {
+    font-size: 28px;
+  }
+  &_temprature {
+    font-size: 24px;
+  }
+
+  &_description {
+    font-size: 20;
+  }
+}
