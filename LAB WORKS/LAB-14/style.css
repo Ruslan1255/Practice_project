@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  text-align: center;
+  height: 100vh;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+body .lets_play {
+  font-size: 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+body .lets_play span {
+  font-size: 24px;
+}
+body .lets_play_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+body .lets_play_content_input {
+  width: 180px;
+  padding: 10px;
+  outline: none;
+  border: none;
+}
+body .lets_play_content .btn {
+  width: 100px;
+  padding: 10px;
+  border-radius: 8px;
+}
+body .lets_play_content_guesses {
+  font-size: 24px;
+}
+body .lets_play_content_guessed_number {
+  font-size: 24px;
+}/*# sourceMappingURL=style.css.map */
