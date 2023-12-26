@@ -207,3 +207,108 @@
 // document.write(result);
 
 // TASK 12
+
+// Create a program to find the minimum number in an array of numbers: [1, 2, 3, 4, 5] => 1
+
+function findMin(arr) {
+  let min = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < min) {
+      min = arr[i];
+    }
+  }
+  return min;
+}
+
+const numbers1 = [1, 2, 3, 4, 5];
+console.log("Minimum number:", findMin(numbers1));
+
+// TASK 13
+
+// Create a program to find the second largest number in an array of numbers: [1, 2, 3, 4, 5] => 4
+function findSecondLargest(arr) {
+  let firstMax = arr[0];
+  let secondMax = arr[0];
+
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > firstMax) {
+      secondMax = firstMax;
+      firstMax = arr[i];
+    } else if (arr[i] > secondMax && arr[i] !== firstMax) {
+      secondMax = arr[i];
+    }
+  }
+  return secondMax;
+}
+
+const numbers2 = [1, 2, 3, 4, 5];
+console.log("Second largest number:", findSecondLargest(numbers2));
+
+// TASK14
+
+// Create a program to find the second smallest number in an array of numbers: [1, 2, 3, 4, 5] => 2
+function findSecondSmallest(arr) {
+  let firstMin = arr[0];
+  let secondMin = arr[0];
+
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < firstMin) {
+      secondMin = firstMin;
+      firstMin = arr[i];
+    } else if (arr[i] < secondMin && arr[i] !== firstMin) {
+      secondMin = arr[i];
+    }
+  }
+  return secondMin;
+}
+
+const numbers3 = [1, 2, 3, 4, 5];
+console.log("Second smallest number:", findSecondSmallest(numbers3));
+
+// TASK 15
+
+// Create a program to find the count of each element in an array of numbers: [1, 2, 3, 4, 5, 1, 2, 3, 4, 5] => {1: 2, 2: 2, 3: 2, 4: 2, 5: 2}
+function countElements(arr) {
+  const countMap = {};
+
+  for (let i = 0; i < arr.length; i++) {
+    const num = arr[i];
+    countMap[num] = (countMap[num] || 0) + 1;
+  }
+  return countMap;
+}
+
+const numbers4 = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5];
+console.log("Count of each element:", countElements(numbers4));
+
+// TASK 16
+
+// Create a program to find the sum of the odd numbers in an array of numbers: [1, 2, 3, 4, 5] => 9
+function sumOfOdds(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 !== 0) {
+      sum += arr[i];
+    }
+  }
+  return sum;
+}
+
+const numbers5 = [1, 2, 3, 4, 5];
+console.log("Sum of odd numbers:", sumOfOdds(numbers5));
+
+// TASK 17
+
+// Create a program to find the sum of the even numbers in an array of numbers: [1, 2, 3, 4, 5] => 6
+function sumOfEvens(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      sum += arr[i];
+    }
+  }
+  return sum;
+}
+
+const numbers6 = [1, 2, 3, 4, 5];
+console.log("Sum of even numbers:", sumOfEvens(numbers6));
