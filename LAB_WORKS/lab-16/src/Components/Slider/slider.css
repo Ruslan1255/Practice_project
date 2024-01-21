@@ -1,0 +1,26 @@
+.slider_container{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+.previous_btn,.next_btn{
+  font-size: 34px;
+  color: blue;
+  cursor: pointer;
+}
+
+.slider{
+  width: 500px;
+  height: 400px;
+  padding: 20px;
+  border: 1px solid black;
+
+}
+
+.slider img{
+  width: 400px;
+  height: 300px;
+}
