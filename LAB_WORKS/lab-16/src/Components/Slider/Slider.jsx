@@ -7,8 +7,7 @@ const Slider = ({ data }) => {
   const [count, setCount] = useState(0);
 
   function onDecramentHandler() {
-    setCount((prev) => prev - 1);
-    if (count === 0) {
+    if (count <= 0) {
       setCount(data.length - 1);
     } else {
       setCount((prev) => prev - 1);
@@ -16,7 +15,6 @@ const Slider = ({ data }) => {
   }
 
   function onInceramentHandler() {
-    setCount((prev) => prev + 1);
     if (count === data.length - 1) {
       setCount(0);
     } else {
