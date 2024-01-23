@@ -1,0 +1,54 @@
+.counter_box {
+  margin: 50px;
+  width: 400px;
+  height: 250px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.counter_box_title {
+  font-size: 34px;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.minus_button {
+  padding: 10px;
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 14px;
+}
+
+.plus_button {
+  padding: 10px;
+  background-color: green;
+  border: none;
+  color: white;
+  font-size: 14px;
+}
+
+.reset_button {
+  padding: 10px;
+  background-color: chocolate;
+  border: none;
+  color: white;
+  font-size: 14px;
+}
+
+.value_box {
+  padding: 10px;
+  background-color: blue;
+  border: none;
+  color: white;
+  font-size: 24px;
+}
