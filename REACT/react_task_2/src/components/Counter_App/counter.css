@@ -21,28 +21,16 @@
   gap: 25px;
 }
 
-.minus_button {
-  padding: 10px;
+.minus {
   background-color: red;
-  border: none;
-  color: white;
-  font-size: 14px;
 }
 
-.plus_button {
-  padding: 10px;
+.plus {
   background-color: green;
-  border: none;
-  color: white;
-  font-size: 14px;
 }
 
-.reset_button {
-  padding: 10px;
+.reset {
   background-color: chocolate;
-  border: none;
-  color: white;
-  font-size: 14px;
 }
 
 .value_box {

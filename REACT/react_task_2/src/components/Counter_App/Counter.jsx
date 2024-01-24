@@ -17,9 +17,11 @@ class Counter extends Component {
     });
   };
   handleMinusClick = () => {
-    this.setState({
-      value: this.state.value - 1,
-    });
+    if (this.state.value > 0) {
+      this.setState({
+        value: this.state.value - 1,
+      });
+    }
   };
 
   handleResetClick = () => {
@@ -34,15 +36,15 @@ class Counter extends Component {
         <div className="counter_box">
           <div className="counter_box_title">Counter App</div>
           <div className="counter">
-            <button className="minus_button" onClick={this.handleMinusClick}>
+            <button className="minus button" onClick={this.handleMinusClick}>
               Descrease
             </button>
             <div className="value_box">Value :{this.state.value}</div>
-            <button className="plus_button" onClick={this.handlePLusClick}>
+            <button className="plus button" onClick={this.handlePLusClick}>
               Increase
             </button>
           </div>
-          <button className="reset_button" onClick={this.handleResetClick}>
+          <button className="reset button" onClick={this.handleResetClick}>
             Reset
           </button>
         </div>

@@ -4,3 +4,10 @@
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
 }
+
+.button {
+  padding: 10px;
+  border: none;
+  color: white;
+  font-size: 14px;
+}
