@@ -1,0 +1,16 @@
+.btn {
+  margin: 20px;
+  background-color: darkorange;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.app {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
