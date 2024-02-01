@@ -1,15 +1,14 @@
-import { useState } from "react";
+import Modal from "./components/Modal_App/Modal";
 
 import "./App.css";
 
 import Counter from "./components/Counter_App/Counter";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <Counter />
+      <Modal /> 
     </>
   );
 }
