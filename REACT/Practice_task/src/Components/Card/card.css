@@ -1,0 +1,18 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 20px;
+  gap: 20px;
+}
+.card {
+  height: 100px;
+  background-color: #000;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+h3 {
+  color: #fff;
+}
