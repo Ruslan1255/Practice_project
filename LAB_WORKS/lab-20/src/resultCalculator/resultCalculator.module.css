@@ -1,0 +1,23 @@
+.calculator_time{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-style: italic;
+}
+
+h2{
+  font-size: 2rem;
+  font-weight: bold;
+  display: inline-block;
+}
+.calculator_time,
+.calculator_time_month,
+.calculator_time_year{
+  display: flex;
+  font-size: 3rem;
+  font-weight: bold;
+  gap: 0.5rem;
+}
+span{
+  color: #854DFF;
+}

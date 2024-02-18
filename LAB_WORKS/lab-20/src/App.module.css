@@ -1,0 +1,16 @@
+.age_calculator{
+  width: 42rem;
+  height: 32.55rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 5.6rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  border-bottom-right-radius:100px;
+}
+@media screen and (max-width:968px) {
+  body{
+    font-size: 5px;
+  }
+}
