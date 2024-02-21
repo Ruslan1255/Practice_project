@@ -1,15 +1,18 @@
-.toDoForm_input {
+.toDoForm_input{
   width: 98%;
   height: 65px;
   border: none;
   border-radius: 8px;
-}
-.ToDoForm {
-  display: flex;
-  align-items: center;
-}
-.ToDoForm_icon {
-  margin: 20px;
-  font-size: 24px;
-  cursor: pointer;
-}
+  background: var(--body-bg-color);
+  color: var(--body-text);
+ }
+ .ToDoForm{
+     display: flex;
+     align-items: center;    
+ }
+ .ToDoForm_icon{
+     margin: 20px;
+     font-size: 24px;
+     cursor: pointer;
+     color: var(--body-text);
+ }

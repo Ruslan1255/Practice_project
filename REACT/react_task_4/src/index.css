@@ -1,5 +1,35 @@
+:root{
+  --body-text:black;
+  --body-bg-color:white;
+}
+
+[data-theme="dark"] {
+  --body-text:white;
+  --body-bg-color:black;
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  background:var(--body-bg-color);
+}
+
+html {
+  font-size: 16px;
+}
+
+li{
+  list-style: none;
+}
+
+@media screen and (max-width: 48rem) {
+  html {
+    font-size: 0.625rem;
+  }
 }

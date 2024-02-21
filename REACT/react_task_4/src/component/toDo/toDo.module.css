@@ -1,0 +1,48 @@
+.ToDo_li {
+  list-style: none;
+  height: 65px;
+  width: 100%;
+  border-top: 1px solid gray;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.ToDo_task_icon {
+  margin: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--body-text);
+}
+
+.taskText {
+  color: var(--body-text);
+}
+
+.ToDo_task_icon_completed {
+  margin: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  background: #007fff;
+  color: var(--body-bg-color);
+  border-radius: 50%;
+}
+
+.toDOTask {
+  display: flex;
+  align-items: center;
+}
+
+.completed {
+  color: gray;
+  text-decoration-line: line-through;
+}
+
+.taskText {
+  margin-left: 10px;
+}
